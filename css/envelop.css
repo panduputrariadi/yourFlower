@@ -102,8 +102,6 @@ body {
   color: #fff;
   font-family: monospace;
   overflow: hidden;
-  /* border-right: 0.15em solid orange; */
-  /* white-space: nowrap; */
   margin: 0 auto;
   padding: 0 auto;
   letter-spacing: 0.15em;
@@ -129,56 +127,52 @@ body {
   }
 }
 
-.typewriter p:nth-child(2) {
-  color: #fff;
-  font-family: monospace;
+.container{
+  /* width: 246px; */
   overflow: hidden;
-  padding: 0 auto;
-  /* white-space: nowrap; */
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 1s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
-  animation-delay: 0.7s;
-  animation-fill-mode: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.typewriter p:nth-child(3) {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  padding: 0 auto;
-  /* white-space: nowrap; */
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 1s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
+.container .text{
+  position: relative;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 600;
 }
-.typewriter p:nth-child(4) {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  padding: 0 auto;
-  /* white-space: nowrap; */
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 1s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
-  animation-delay: 1.55s;
-  animation-fill-mode: both;
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
 }
-.typewriter p:nth-child(5) {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  padding: 0 auto;
-  /* white-space: nowrap; */
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 1s steps(30, end) forwards,
-    blink-caret 0.75s step-end infinite;
-  animation-delay: 2.3s;
-  animation-fill-mode: both;
+.button button{
+  background-color: #fc82bd;
+  border-radius: 5px;
+}
+.button a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #111;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000e2a;
+  border-left: 2px solid #FFF;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
 }

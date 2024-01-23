@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read this</title>
-    <link rel="stylesheet" href="css/envelop.css">
-</head>
-<body>
-    <div class="hero"> 
-        <div class="hero__title">Dibaca ya natasya</div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Natasya</title>
+    <link rel="stylesheet" href="css/envelop.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero__title">Dibaca ya natasya</div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
 
-        <div class="typewriter">
-            <p>hai nat, kalo kamu baca ini artinya aku ungkapi isi hatiku</p>
-            <p>aku gatau sejak kapan aku naruh hati ke kamu</p>
-            <p>aku harusnya udah tau konsekuensinya apabila aku ditolak kamu, selain itu aku juga udah sering ngajakin kamu pacaran</p>
-            <p>aku gakuat nahan rasa ini nat, aku izin untuk menyampaikan rasaku, izinkan aku miliki kamu natasya, bolehkah?</p>
-          </div>
+      <div class="container">
+        <!-- <span class="text first-text">I'm a</span> -->
+        <span class="text sec-text"></span>
+        
       </div>
-</body>
+      <div class="button">
+        <button><a href="flower.html">bunga buat kamu nat</a></button>
+      </div>
+    </div>
+    <script>
+      const text = document.querySelector(".sec-text");
+      const textLoad = () => {
+          setTimeout(() => {
+              text.textContent = "Hai nat,";
+          }, 0);
+          setTimeout(() => {
+              text.textContent = " ada sesuatu buat kamu";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "aku itu pengen";
+          }, 8000); //1s = 1000 milliseconds
+          setTimeout(() => {
+              text.textContent = "ungkapi sesuatu";
+          }, 12000);
+          setTimeout(() => {
+              text.textContent = "aku gatau mulai dari mana";
+          }, 16000);
+          setTimeout(() => {
+              text.textContent = "jadi...";
+          }, 20000);
+          setTimeout(() => {
+              text.textContent = "aku falling in love";
+          }, 24000);
+          setTimeout(() => {
+              text.textContent = "falling in love with u";
+          }, 28000);
+          setTimeout(() => {
+              text.textContent = "aku gatau sejak kapan,,";
+          }, 32000);
+          setTimeout(() => {
+              text.textContent = "pastinya aku merasa..";
+          }, 36000);
+          setTimeout(() => {
+              text.textContent = "merasa nyaman kalo sama kamu";
+          }, 40000);
+          setTimeout(() => {
+              text.textContent = "harusnya aku tau";
+          }, 44000);
+          setTimeout(() => {
+              text.textContent = "konsekuensinya kalau";
+          }, 48000);
+          setTimeout(() => {
+              text.textContent = "aku ungkapi isi hatiku";
+          }, 52000);
+          setTimeout(() => {
+              text.textContent = "jadi...";
+          }, 56000);
+          setTimeout(() => {
+              text.textContent = "boleh ga ukir?";
+          }, 60000);
+          setTimeout(() => {
+              text.textContent = "ukir namaku di hatimu?";
+          }, 64000);
+          setTimeout(() => {
+              text.textContent = "dan...";
+          }, 68000);
+          setTimeout(() => {
+              text.textContent = "izinkan untuk";
+          }, 72000);
+          setTimeout(() => {
+              text.textContent = "untuk memiliki kamu nat";
+          }, 76000);
+      }
+      textLoad();
+      setInterval(textLoad, 80000);
+  </script> 
+  </body>
 </html>
